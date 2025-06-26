@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/Calcpage-css.css">
+    <script src="js/bmi-js.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <a href="Bmi-home-page.html" class="logo" data-aos="fade-down" data-aos-duration="1400">
+        <span class="highlight-sec-color">BMI</span> Calculator
+        </a>
+    </header>
+
+    <div  class="container">
+        <div class="box" data-aos="fade-right" data-aos-duration="1400">
+            <div class="calc-box-content">
+                <div class="input">
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height">
+                </div>
+                <div class="input">
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight">
+                </div>
+                <button id = "Calc">Calculate BMI</button>
+            </div>
+            <div class="result-box">
+                <p>Your BMI is:</p>
+                <p id="result">0</p>
+                <p class = "status">You are <span id="status">...</span></p>
+            </div>
+        </div>
+    </div>
+        <spline-viewer class="ball-animation" data-aos="fade-left" data-aos-duration="1400" url="https://prod.spline.design/I3qjYxIYi6gozioV/scene.splinecode"></spline-viewer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.14/build/spline-viewer.js"></script>
+
+</html>
